@@ -1,0 +1,1 @@
+Start-Process -FilePath "C:\User Deploy - 7.0.0.35 - LocalPaperCut\TBS_Installer_7.0.0.35.exe"

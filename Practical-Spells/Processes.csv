@@ -1,0 +1,316 @@
+"Name","Company","Description"
+"AggregatorHost",,
+"ApplicationFrameHost","Microsoft Corporation","Application Frame Host"
+"armsvc",,
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"chrome","Google LLC","Google Chrome"
+"Code","Microsoft Corporation","Visual Studio Code"
+"Code","Microsoft Corporation","Visual Studio Code"
+"Code","Microsoft Corporation","Visual Studio Code"
+"Code","Microsoft Corporation","Visual Studio Code"
+"Code","Microsoft Corporation","Visual Studio Code"
+"Code","Microsoft Corporation","Visual Studio Code"
+"Code","Microsoft Corporation","Visual Studio Code"
+"Code","Microsoft Corporation","Visual Studio Code"
+"Code","Microsoft Corporation","Visual Studio Code"
+"Code","Microsoft Corporation","Visual Studio Code"
+"CodeSetup-stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813","Microsoft Corporation                                       ","Visual Studio Code Setup                                    "
+"CodeSetup-stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813.tmp","Microsoft Corporation                                       ","Setup/Uninstall"
+"conhost",,
+"conhost",,
+"conhost",,
+"conhost",,
+"conhost",,
+"conhost",,
+"conhost",,
+"conhost",,
+"conhost","Microsoft Corporation","Console Window Host"
+"CptService",,
+"CrossDeviceService","Microsoft Corporation","Microsoft Cross Device Service"
+"csrss",,
+"csrss",,
+"ctfmon",,
+"dasHost",,
+"DDVCollectorSvcApi",,
+"DDVDataCollector",,
+"DDVRulesProcessor",,
+"Dell.CoreServices.Client",,
+"Dell.D3.WinSvc",,
+"Dell.Optimizer.DthProxy",,
+"Dell.TechHub",,
+"Dell.TechHub.Analytics.SubAgent",,
+"Dell.TechHub.DataManager.SubAgent",,
+"Dell.TechHub.Diagnostics.SubAgent",,
+"Dell.TechHub.Instrumentation.SubAgent",,
+"Dell.TechHub.Instrumentation.UserProcess",,
+"Dell.TrustedDevice.Service",,
+"DellOptimizer",,
+"DellSupportAssistRemedationService",,
+"DFLocker64",,
+"DFServ",,
+"DFServerService",,
+"dllhost","Microsoft Corporation","COM Surrogate"
+"dllhost","Microsoft Corporation","COM Surrogate"
+"DPM","Dell Inc.","Dell Peripheral Manager Application"
+"DPMCrashHandler",,
+"DPMCrashHandler",,
+"DPMService",,
+"dwm",,
+"EXCEL","Microsoft Corporation","Microsoft Excel"
+"explorer","Microsoft Corporation","Windows Explorer"
+"FileCoAuth","Microsoft Corporation","Microsoft OneDriveFile Co-Authoring Executable"
+"FileSyncHelper",,
+"FNPLicensingService",,
+"fontdrvhost",,
+"fontdrvhost",,
+"FrzState2k",,
+"hmpalert",,
+"IDBWM",,
+"IDBWMService",,
+"Idle",,
+"IntelConnect",,
+"IntelConnectivityNetworkService",,
+"IntelConnectService",,
+"IntelCpHDCPSvc",,
+"ipf_helper","Intel Corporation","Intel(R) Innovation Platform Framework Utility Application"
+"ipf_uf",,
+"ISLAlwaysOn",,
+"ISLAlwaysOnService",,
+"ISLAlwaysOnTray","ISL Online Ltd.","ISL AlwaysOn Tray Icon"
+"jhi_service",,
+"LsaIso",,
+"lsass",,
+"McsAgent",,
+"McsClient",,
+"Memory Compression",,
+"Microsoft.SharePoint","Microsoft Corporation","Microsoft SharePoint"
+"MicrosoftSearchInBing",,
+"mobsync","Microsoft Corporation","Microsoft Sync Center"
+"mongod",,
+"MoUsoCoreWorker",,
+"ms-teams","Microsoft Corporation","Microsoft Teams"
+"ms-teams","Microsoft Corporation","Microsoft Teams"
+"msdtc",,
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"msedgewebview2","Microsoft Corporation","Microsoft Edge WebView2"
+"NVDisplay.Container",,
+"NVDisplay.Container",,
+"OfficeClickToRun",,
+"olk","Microsoft Corporation","Microsoft Outlook"
+"OneApp.IGCC.WinService",,
+"OneDrive","Microsoft Corporation","Microsoft OneDrive"
+"ONENOTE","Microsoft Corporation","Microsoft OneNote"
+"ONENOTEM","Microsoft Corporation","Send to OneNote Tool"
+"OpenConsole","Microsoft Corporation","OpenConsole.exe"
+"PhoneExperienceHost","Microsoft Corporation","Microsoft Phone Link"
+"pwsh","Microsoft Corporation","pwsh"
+"pwsh","Microsoft Corporation","pwsh"
+"Registry",,
+"rorchcdk",,
+"RstMwService",,
+"RtkAudUService64",,
+"RtkAudUService64",,
+"RtkAudUService64","Realtek Semiconductor","Realtek HD Audio Universal Service"
+"RuntimeBroker","Microsoft Corporation","Runtime Broker"
+"RuntimeBroker","Microsoft Corporation","Runtime Broker"
+"RuntimeBroker","Microsoft Corporation","Runtime Broker"
+"RuntimeBroker","Microsoft Corporation","Runtime Broker"
+"RuntimeBroker","Microsoft Corporation","Runtime Broker"
+"RuntimeBroker","Microsoft Corporation","Runtime Broker"
+"RuntimeBroker","Microsoft Corporation","Runtime Broker"
+"RuntimeBroker","Microsoft Corporation","Runtime Broker"
+"SDApiService",,
+"SearchHost","Microsoft Corporation",""
+"SearchIndexer",,
+"Secure System",,
+"SecurityHealthService",,
+"SecurityHealthSystray","Microsoft Corporation","Windows Security notification icon"
+"SEDService",,
+"services",,
+"ServiceShell",,
+"ShellExperienceHost","Microsoft Corporation","Windows Shell Experience Host"
+"sihost","Microsoft Corporation","Shell Infrastructure Host"
+"smss",,
+"Sophos UI","Sophos Limited","Sophos Endpoint Agent"
+"SophosFileScanner",,
+"SophosFileScanner",,
+"SophosFS",,
+"SophosHealth",,
+"SophosLiveQueryService",,
+"SophosNetFilter",,
+"SophosNtpService",,
+"SophosOsquery",,
+"splwow64","Microsoft Corporation","Print driver host for applications"
+"spoolsv",,
+"SSPService",,
+"StarMicronicsCloudUploader","Star Micronics Co., Ltd.","Star Micronics Cloud Upload Application"
+"StartMenuExperienceHost","Microsoft Corporation","Windows Start Experience Host"
+"SupportAssistAgent",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost",,
+"svchost","Microsoft Corporation","Host Process for Windows Services"
+"svchost","Microsoft Corporation","Host Process for Windows Services"
+"svchost","Microsoft Corporation","Host Process for Windows Services"
+"svchost","Microsoft Corporation","Host Process for Windows Services"
+"svchost","Microsoft Corporation","Host Process for Windows Services"
+"svchost","Microsoft Corporation","Host Process for Windows Services"
+"svchost","Microsoft Corporation","Host Process for Windows Services"
+"svchost","Microsoft Corporation","Host Process for Windows Services"
+"svchost",,
+"svchost","Microsoft Corporation","Host Process for Windows Services"
+"svchost",,
+"svchost",,
+"svchost",,
+"System",,
+"SystemSettings","Microsoft Corporation","Settings"
+"SystemSettingsBroker","Microsoft Corporation","System Settings Broker"
+"taskhostw","Microsoft Corporation","Host Process for Windows Tasks"
+"TextInputHost","Microsoft Corporation",""
+"ThermalPrintingService",,
+"tvnserver",,
+"tvnserver","GlavSoft LLC.","TightVNC Server"
+"uhssvc",,
+"unsecapp",,
+"unsecapp","Microsoft Corporation","Sink to receive asynchronous callbacks for WMI client application"
+"UserOOBEBroker","Microsoft Corporation","User OOBE Broker"
+"WavesAudioService",,
+"WavesSvc64","Waves Audio Ltd.","Waves MaxAudio Service Application"
+"WavesSysSvc64",,
+"WDTRpcServer",,
+"Widgets","Microsoft Corporation",""
+"WidgetService","Microsoft Corporation","WidgetService.exe"
+"WindowsTerminal","Microsoft Corporation","WindowsTerminal.exe"
+"wininit",,
+"winlogon",,
+"wlanext",,
+"WmiPrvSE",,
+"WmiPrvSE",,
+"WmiPrvSE",,
+"WMIRegistrationService",,
+"WUDFHost",,
+"WUDFHost",,
+"WUDFHost",,
