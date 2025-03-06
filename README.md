@@ -1,3 +1,3 @@
 ## Shell Spells 🐢🧙‍♂️
 
-### A living directory of Powershell scripts that I have found useful 🔮
+### A living directory of PowerShell scripts that I have found useful 🔮
