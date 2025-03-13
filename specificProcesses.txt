@@ -1,0 +1,11 @@
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  AdobeARMservice    Adobe Acrobat Update Service
+Stopped  AppIDSvc           Application Identity
+Stopped  AppReadiness       App Readiness
+Stopped  AppVClient         Microsoft App-V Client
+Running  BITS               Background Intelligent Transfer Servi…
+Running  CryptSvc           Cryptographic Services
+Running  cplspcon           Intel(R) Content Protection HDCP Serv…
+

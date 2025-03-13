@@ -22,7 +22,7 @@ function Send-WakeOnLan {
   try {
     # Send magic packet
     $UdpClient.Send($MagicPacket, $MagicPacket.Length, $IpAddress, $Port)
-    Write-Host "Magic packet sent to '$MacAddress' at '$IpAddress:$Port'"
+    Write-Host "Magic packet sent to '$MacAddress' at '${IpAddress}:$Port'"
   }
   catch {
     Write-Error "Failed to send magic packet: $_"
