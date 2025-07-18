@@ -1,0 +1,426 @@
+
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>No Man&#x27;s Sky - No Man&#x27;s Sky</title>
+    <meta name="description" content="No Man&#x2019;s Sky is a game about exploration and survival in an infinite procedurally generated galaxy, available on PS4, PC and Xbox One. Now with massively expanded multiplayer." />
+<meta name="robots" content="index, follow" />
+
+<link rel="canonical" href="https://www.nomanssky.com/" />
+
+<meta property="og:url" content="https://www.nomanssky.com/" />
+<meta property="og:title" content="No Man&#x27;s Sky - No Man&#x27;s Sky" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="No Man&#x27;s Sky - No Man&#x27;s Sky" />
+    <meta property="og:description" content="No Man&#x2019;s Sky is a game about exploration and survival in an infinite procedurally generated galaxy, available on PS4, PC and Xbox One. Now with massively expanded multiplayer." />
+    <meta name="twitter:description" content="No Man&#x2019;s Sky is a game about exploration and survival in an infinite procedurally generated galaxy, available on PS4, PC and Xbox One. Now with massively expanded multiplayer." />
+<meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.nomanssky.com/media/mi2dimzv/homepage-next-2560-1180.jpg" />
+    <meta name="twitter:image" content="https://www.nomanssky.com/media/mi2dimzv/homepage-next-2560-1180.jpg" />
+
+
+    
+
+
+    
+            <link rel="apple-touch-icon" sizes="180x180" media="(prefers-color-scheme: light)" href="/media/xfpgymup/favicon-250x250.png?width=180&amp;height=180&amp;v=1daf5842e6e7510">
+            <link rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: light)" href="/media/xfpgymup/favicon-250x250.png?width=32&amp;height=32&amp;v=1daf5842e6e7510">
+            <link rel="icon" type="image/png" sizes="16x16" media="(prefers-color-scheme: light)" href="/media/xfpgymup/favicon-250x250.png?width=16&amp;height=16&amp;v=1daf5842e6e7510">
+
+
+    <link rel="manifest" href="/images/icons/favicon/manifest.json">
+    <link rel="mask-icon" color="#5bbad5" href="/images/icons/favicon/safari-pinned-tab.svg">
+    <link rel="stylesheet" href="/css/stylesLegacy.css?v=qwgOM4PmAi8ezlkJn0nJ1rcWVGM9b6cafVgGd9YKsfI" />
+    <link rel="stylesheet" href="/css/styles.css?v=elkZSpxJoOibCLT5x_5JMxSGsbXLnIyFmhOFbD5ZTHE" />
+    <script type="module" defer src="/scripts/mainLegacy-XBiYYztG.js" nonce="QtHET&#x2B;sXVHfq90AO11Zq9szEpVshsF0lOefl&#x2B;/U&#x2B;JEc="></script>
+    <script type="module" defer src="/scripts/main-yvgSzsfn.js" nonce="QtHET&#x2B;sXVHfq90AO11Zq9szEpVshsF0lOefl&#x2B;/U&#x2B;JEc="></script>
+    <link rel="preload" as="font" type="font/woff" crossorigin="anonymous" href="/fonts/geonms-webfont.woff">
+
+
+      <script nonce="QtHET+sXVHfq90AO11Zq9szEpVshsF0lOefl+/U+JEc=">
+    window.dataLayer = window.dataLayer || []; 
+    function gtag() { dataLayer.push(arguments); }
+    gtag('set','url_passthrough',true);
+    gtag('consent', 'default', { 
+      'ad_storage': 'denied', 
+      'analytics_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+  </script>
+  
+  <!-- Google Tag Manager -->
+  <script nonce="QtHET+sXVHfq90AO11Zq9szEpVshsF0lOefl+/U+JEc=">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KZ896W3');</script>
+  <!-- End Google Tag Manager -->
+  
+  <style nonce="QtHET+sXVHfq90AO11Zq9szEpVshsF0lOefl+/U+JEc=">
+      .section__content { max-width: 118rem !important; }
+  </style>
+
+    
+
+
+    
+
+
+
+
+    <script nonce="QtHET&#x2B;sXVHfq90AO11Zq9szEpVshsF0lOefl&#x2B;/U&#x2B;JEc=">
+        window.loadCivic = function () {
+            const config = {
+                apiKey: '13b479bd3463122cf761be70f8f8f3540870bee7',
+                product: 'PRO_MULTISITE',
+                necessaryCookies: ["UMB*","ARRAffinity*",".AspNetCore*","ai_session","CookieControl"],
+                initialState: 'open',
+                notifyOnce: false,
+                rejectButton: false,
+                acceptBehaviour: 'all',
+                closeOnGlobalChange: true,
+                layout: 'slideout',
+                position: 'Left',
+                theme: 'Dark',
+                toggeType: 'slider',
+                closeStyle: 'icon',
+                settingsStyle: 'button',
+                subDomains: true,
+
+                    optionalCookies: [
+
+                            {
+                                cookies: '["_ga*","_gid","_gat","_utma","_utmt","_utmb","_utmc","_utmz","_utmv"]',
+                                description: 'We use analytical cookies to understand usage of the website to better improve the experience.',
+                                label: 'Analytical Cookies',
+                                name: 'analyticalcookies',
+                                onAccept: function () {
+                                  gtag('consent', 'update', {'analytics_storage': 'granted'});
+          window.dataLayer.push({
+            event: "analytics-consent-granted",
+          });
+                                                        },
+                                onRevoke: function () {
+                                  gtag('consent', 'update', {'analytics_storage': 'denied'});
+          window.dataLayer.push({
+            event: "analytics-consent-denied",
+          });
+                                                        },
+                                recommendedState: true
+                            },
+                    
+                            {
+                                cookies: '["fr","_fbp","_ga*","_gads","_gid","_gat","_ttp","_tt_enable_cookie","_tt_sessionId","_scid","_scid_r","_rdt_uuid","twid","_gcl_gb","_gcl_aw","twq"]',
+                                description: 'We use marketing cookies to help us improve the relevancy of advertising campaigns you receive.',
+                                label: 'Marketing Cookies',
+                                name: 'marketingcookies',
+                                onAccept: function () {
+                                gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+        window.dataLayer.push({
+          event: "marketing-consent-granted",
+        });
+                                                        },
+                                onRevoke: function () {
+                                gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied'
+        });
+        window.dataLayer.push({
+            event: "marketing-consent-denied",
+        });
+
+                                                        },
+                                recommendedState: true
+                            },
+                                                        ],
+            
+
+                    text: {"accept":"Accept","acceptRecommended":"Accept recommended","closeLabel":"Confirm your choices","intro":"Some of these cookies are essential, while others help us to improve your experience by providing insights into how the site is being used.","necessaryDescription":"Necessary cookies enable core functionality such as page navigation and access to secure areas. The website cannot function properly without these cookies, and can only be disabled by changing your browser preferences.","necessaryTitle":"NECESSARY COOKIES","notifyDescription":"Some of these cookies are essential, while others help us to improve your experience by providing insights into how the site is being used.","notifyTitle":"THIS SITE USES COOKIES TO STORE INFORMATION ON YOUR COMPUTER.","off":"Off","on":"On","reject":"Reject","rejectSettings":"I do not accept cookies","settings":"Settings","title":"THIS SITE USES COOKIES TO STORE INFORMATION ON YOUR COMPUTER."},
+                    }
+
+        CookieControl.load(config);
+
+        const cookieSettings = document.querySelector(".js-cookie-options");
+
+        if (!cookieSettings) {
+            return;
+        }
+
+        cookieSettings.addEventListener("click", () => {
+            if (document.getElementById("ccc-overlay")) {
+                CookieControl.hide();
+                return;
+            }
+
+            CookieControl.open();
+        });
+                }
+
+        window.addEventListener('load', function () {
+            var script = document.createElement('script');
+            script.setAttribute('src', 'https://cc.cdn.civiccomputing.com/9/cookieControl-9.9.min.js');
+            script.async = true;
+            script.integrity = 'sha384-RP4bp9aD293adaK4FyAjzJRi/vdPWh9wIskOFWqchy1uEh2LDO8rRBxtpwR/a7lN';
+            script.crossOrigin = 'anonymous';
+            script.addEventListener('load', window.loadCivic);
+            document.head.appendChild(script);
+        });
+    </script>
+
+</head>
+<body>
+    
+
+    
+
+
+
+    <div class="wrapper">
+        <header class="header">
+        <div class="header__logo">
+            <a href="https://www.nomanssky.com/">
+                <picture>
+                    <img src="/images/logo-nms.png"" alt="No Man's Sky Logo">
+                </picture>
+            </a>
+        </div>
+
+        <div class="header__nav-button js-nav-button">Menu</div>
+
+        <div class="header__nav">
+            <div class="header__nav-primary">
+                <nav class="nav">
+                    <ul class="nav__items">
+                        <li class="nav__item">
+                            <a class="btn btn--primary" href="/latest-patch-notes/">Latest patch notes</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://cloud.nomanssky.com/">Hello Games Cloud</a>
+                            <ul class="nav__sublist">
+                                <li class="nav__sublist-item">
+                                    <a href="https://cloud.nomanssky.com/cross-save">Cross-Save <span class="badge">Beta</span></a>
+                                </li>
+                                <li class="nav__sublist-item">
+                                    <a href="https://cloud.nomanssky.com/twitch">Twitch Drops</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/buy-now/">Buy</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/release-log/">Release log</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/news/">News</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://galacticatlas.nomanssky.com/">Galactic Atlas</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+        
+
+<main role="main">
+    <section class="section section--home section--home-video text--centered">
+        <div class="section__content">
+            
+
+
+
+
+<h1 style="margin-top: 6vw;"><img src="/media/legacy/uploads/2022/10/logo-no-mans-sky-614w.png" alt="No Man's Sky logo"></h1>
+<div class="box box--buy-now" style="max-width: 810px;"><!---
+            <a href="https://twitch.nomanssky.com/" style="background-color: #9146FF; display: inline-flex;padding: 2rem 1rem 2rem 2rem;margin: 0 0 3rem;/*! text-align: left; */text-decoration: none;">
+                <img class="display--block" src="/media/legacy/uploads/2021/03/twitch-logo.png" style="max-height: 4rem; max-width: 3.2rem;margin: 0 1rem 0 0;" alt="Buy now on Xbox Series X/S"/>
+                
+
+<h3 style="margin: 0;max-width: 17rem;padding-right: 1rem;box-sizing: border-box;letter-spacing: .2rem;line-height: 1.3;">Twitch Drops now live</h3>
+
+
+            
+            --->
+<h2 class="text--shadow" style="color: white !important; margin-bottom: 1rem !important; font-size: 2.5rem; font-weight: 700 !important; letter-spacing: .2rem;">Buy now on</h2>
+<p>  
+
+<!--- <h3 style="max-width: 37rem; margin-left: auto; margin-right: auto;">PlayStation and Switch on sale now</h3> --->
+
+ 
+            
+
+          <!---  
+
+<h2 class="text--shadow" style="color: white !important; margin-bottom: 1rem !important; font-size: 2.5rem; font-weight: 700 !important;letter-spacing: .2rem;">Sale now on
+
+
+            
+            
+
+<h3 style="margin-bottom: 1rem; margin-left: auto; margin-right: auto;">for PlayStation, Steam, Xbox, Nintendo, and Mac</h3>
+
+
+            
+
+<h3 style="margin-bottom: 1rem; margin-left: auto; margin-right: auto;">Or</h3>
+
+
+            
+
+<h3 style="margin-left: auto; margin-right: auto;">Download the free trial from:</h3>
+
+ ---></p>
+<ul class="list--logos margin--bottom-tiny" style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 54rem;">
+<li style="width: auto; padding: 0 .5rem;"><a class="cta cta--primary display--block padding--small platform_ps4" style="background: #ff8400; border: 0; box-shadow: none; display: flex; height: 100%; box-sizing: border-box; align-items: center; padding: 1rem;" href="https://store.playstation.com/concept/216600"><img class="display--block" src="/media/legacy/uploads/2018/07/logo-ps4.png" style="max-height: 2rem; max-width: 8rem;" alt="Buy now on PS4"></a></li>
+<li style="width: auto; padding: 0 .5rem;"><a class="cta cta--primary display--block padding--small platform_ps5" style="background: #ff8400; border: 0; box-shadow: none; display: flex; height: 100%; box-sizing: border-box; align-items: center; padding: 1rem;" href="https://store.playstation.com/concept/216600"><img class="display--block" src="/media/legacy/uploads/2020/11/logo-ps5.png" style="max-height: 2rem; max-width: 8rem;" alt="Buy now on PS5"></a></li>
+<li style="width: auto; padding: 0 .5rem;"><a class="cta cta--primary display--block platform_steam" style="background: #ff8400; border: 0; box-shadow: none; padding: 1rem; display: flex; height: 100%; box-sizing: border-box; align-items: center;" href="https://steam.gs/l/3wQhP/"><img class="display--block" src="/media/legacy/uploads/2018/07/logo-steam.png" style="max-height: 2rem; max-width: 8rem;" alt="Buy now on Steam"></a></li>
+<li style="width: auto; padding: 0 .5rem;"><a class="cta cta--primary display--block padding--small platform_xbox-one" style="background: #ff8400; border: 0; box-shadow: none; padding: 1rem; display: flex; height: 100%; box-sizing: border-box; align-items: center;" href="https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05"><img class="display--block" src="/media/legacy/uploads/2018/07/logo-xbox-one.png" style="max-height: 2rem; max-width: 8rem;" alt="Buy now on Xbox One"></a></li>
+<li style="width: auto; padding: 0 .5rem;"><a class="cta cta--primary display--block padding--small platform_xbox-series-xs" style="background: #ff8400; border: 0; box-shadow: none; padding: 1rem; display: flex; height: 100%; box-sizing: border-box; align-items: center;" href="https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05"><img class="display--block" src="/media/legacy/uploads/2020/11/logo-xbox-series-x-s.png" style="max-height: 2rem; max-width: 8rem;" alt="Buy now on Xbox Series X/S"></a></li>
+<li style="width: auto; padding: 0 .5rem;"><a class="cta cta--primary display--block padding--small platform_xbox-gamepass" style="background: #ff8400; border: 0; box-shadow: none; padding: 1rem; display: flex; height: 100%; box-sizing: border-box; align-items: center;" href="https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05"><img class="display--block" src="/media/legacy/uploads/2022/02/logo-xbox-game-pass-140w.png" style="max-height: 2rem; max-width: 9rem;" alt="Play now on Xbox Game Pass"></a></li>
+<li style="width: auto; padding: 0 .5rem;"><a class="cta cta--primary display--block padding--small platform_mac" style="background: #ff8400; border: 0; box-shadow: none; display: flex; height: 100%; box-sizing: border-box; align-items: center; padding: 1rem;" href="https://store.steampowered.com/app/275850/No_Mans_Sky/"><img class="display--block" src="/media/legacy/uploads/2023/06/btn_mac_2x.png" style="max-height: 2rem; max-width: 8rem;" alt="Buy now on Mac"></a></li>
+<li style="width: auto; padding: 0 .5rem;"><a class="cta cta--primary display--block padding--small platform_switch" style="background: #ff8400; border: 0; box-shadow: none; display: flex; height: 100%; box-sizing: border-box; align-items: center; padding: 1rem;" href="https://www.nintendo.com/store/products/no-mans-sky-switch/"><img class="display--block" src="/media/legacy/uploads/2022/06/logo-nintendo-switch-83w.png" style="max-height: 2rem; max-width: 8rem;" alt="Buy now on Nintendo Switch"></a></li>
+</ul>
+<p><a class="text--shadow" href="/buy-now/">More purchase options »</a></p>
+</div>
+</div>
+<picture class="section__images"><source srcset="/media/legacy/uploads/2018/07/homepage-next-1024x950.jpg" media="(min-width: 769px)"><source srcset="/media/legacy/uploads/2018/07/homepage-next-768x950.jpg" media="(min-width: 361px)"><source srcset="/media/legacy/uploads/2018/07/homepage-next-360x570.jpg" media="(min-width: 1px)"><img src="/media/legacy/uploads/2018/07/homepage-next-768x950.jpg" alt="MDN"> </picture>
+<div class="section__media-wrapper">
+<div class="section__media"><iframe src="https://player.vimeo.com/video/1051524458?autoplay=1&amp;background=1&amp;loop=1&amp;autopause=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+</section>
+<div class="section section--features-list section--galaxy section--galaxy-huge">
+<div class="section__content">
+<div class="box box--feature-list">
+<div>
+<h2>Infinite</h2>
+<p>Entire galaxies lie waiting to be discovered.</p>
+</div>
+<div>
+<h2>Story</h2>
+<p>Experience infinite freedom, or uncover the secrets of the universe with more than 30 hours of story.</p>
+</div>
+<div>
+<h2>Multiplayer</h2>
+<p>Dogfight, race exocraft, build colonies, explore, trade, fight and survive together.</p>
+</div>
+<div>
+<h2>VR</h2>
+<p>The entire game playable in virtual reality for a more immersive experience.</p>
+</div>
+<div>
+<h2>Beyond</h2>
+<p>Our 2.0 update adds even more depth and features and brings all the strands of No Man’s Sky into a cohesive whole.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section section--feature-right">
+<div class="section__content">
+<div class="box box--feature">
+<h2>Explore</h2>
+<h3>In an infinite universe</h3>
+<p>Be the first to land on beautiful, unknown planets teeming with life. Survive hazardous environments, where alien civilizations seek their fortune and outlaws take it by force.</p>
+<picture><source srcset="/media/legacy/uploads/2018/07/homepage-features-explore-1024x576.jpg" media="(min-width: 769px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-explore-768x432.jpg" media="(min-width: 1px)"><img src="/media/legacy/uploads/2018/07/homepage-features-explore-768x432.jpg" alt="MDN"> </picture></div>
+<picture class="picture--feature-bg"><source srcset="/media/legacy/uploads/2018/07/homepage-features-explore-2560x900-2.jpg" media="(min-width: 1921px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-explore-1920x900.jpg" media="(min-width: 1651px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-explore-1400x600.jpg" media="(min-width: 1391px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-explore-1280x720.jpg" media="(min-width: 1px)"><img src="/media/legacy/uploads/2018/07/homepage-features-explore-1280x720.jpg" alt="MDN"> </picture></div>
+</div>
+<div class="section section--feature-left">
+<div class="section__content">
+<div class="box box--feature">
+<h2>Build</h2>
+<h3>Base building, anywhere, on any planet</h3>
+<p>Team up to build anything from small outposts to complex multi-planet colonies. Farm for resources, hire helpers, or build a mobile base in your freighter.</p>
+<picture><source srcset="/media/legacy/uploads/2018/07/homepage-features-build-1024x576-2.jpg" media="(min-width: 769px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-build-768x432-2.jpg" media="(min-width: 1px)"><img src="/media/legacy/uploads/2018/07/homepage-features-build-768x432-2.jpg" alt="MDN"> </picture></div>
+<picture class="picture--feature-bg"><source srcset="/media/legacy/uploads/2018/07/homepage-features-build-2560x900-2.jpg" media="(min-width: 1921px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-build-1920x900-2.jpg" media="(min-width: 1651px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-build-1400x600-2.jpg" media="(min-width: 1391px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-build-1280x720-2.jpg" media="(min-width: 1px)"><img src="/media/legacy/uploads/2018/07/homepage-features-build-1280x720-2.jpg" alt="MDN"> </picture></div>
+</div>
+<div class="section section--feature-right">
+<div class="section__content">
+<div class="box box--feature">
+<h2>Multiplayer</h2>
+<h3>Explore, Build and Survive Together</h3>
+<p>Experience up to 32 player multiplayer when you summon the social hub, the Space Anomaly, from anywhere in the universe. Form a group, go on inter-galactic missions together or visit each other’s bases.</p>
+<picture><source srcset="/media/legacy/uploads/2019/08/homepage-features-multiplayer-1024x576.jpg" media="(min-width: 769px)"><source srcset="/media/legacy/uploads/2019/08/homepage-features-multiplayer-768x432.jpg" media="(min-width: 1px)"><img src="/media/legacy/uploads/2019/08/homepage-features-multiplayer-768x432.jpg" alt="MDN"> </picture></div>
+<picture class="picture--feature-bg"><source srcset="/media/legacy/uploads/2019/08/homepage-features-multiplayer-2560x900.jpg" media="(min-width: 1921px)"><source srcset="/media/legacy/uploads/2019/08/homepage-features-multiplayer-1920x900.jpg" media="(min-width: 1651px)"><source srcset="/media/legacy/uploads/2019/08/homepage-features-multiplayer-1400x600.jpg" media="(min-width: 1391px)"><source srcset="/media/legacy/uploads/2019/08/homepage-features-multiplayer-1280x720.jpg" media="(min-width: 1px)"><img src="/media/legacy/uploads/2019/08/homepage-features-multiplayer-1280x720.jpg" alt="MDN"> </picture></div>
+</div>
+<div class="section section--feature-left">
+<div class="section__content">
+<div class="box box--feature">
+<h2>Community</h2>
+<h3>Join the intergalactic neighbourhood</h3>
+<p>Join one of the thriving community Galactic Hubs, where you and like-minded travellers can create a new frontier.</p>
+<p><a class="cta cta--primary-ghost" href="https://galacticatlas.nomanssky.com/">Check out the Galactic Atlas</a></p>
+<picture><source srcset="/media/legacy/uploads/2018/07/homepage-features-community-1024x576-2.jpg" media="(min-width: 769px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-community-768x432-2.jpg" media="(min-width: 1px)"><img src="/media/legacy/uploads/2018/07/homepage-features-community-768x432-2.jpg" alt="MDN"> </picture></div>
+<picture class="picture--feature-bg"><source srcset="/media/legacy/uploads/2018/07/homepage-features-community-2560x900-2.jpg" media="(min-width: 1921px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-community-1920x900-2.jpg" media="(min-width: 1651px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-community-1400x600-2.jpg" media="(min-width: 1391px)"><source srcset="/media/legacy/uploads/2018/07/homepage-features-community-1280x720-2.jpg" media="(min-width: 1px)"><img src="/media/legacy/uploads/2018/07/homepage-features-community-1280x720-2.jpg" alt="MDN"> </picture></div>
+</div>
+<section class="section section--updates section--galaxy section--galaxy-huge margin--bottom-none">
+<h2>Evolving</h2>
+<h3>No Man&#8217;s Sky represents a constantly growing experience</h3>
+<p>No Man&#8217;s Sky is continuously evolving with major updates which grow and expand the universe with new ways to play.</p>
+<div class="crossbar shadow--small-y">
+<div class="crossbar__container">
+<div class="scroll-none crossbar__item shadow--small-y">
+                <a href="/omega-update/"><img src="/media/legacy/uploads/2024/02/nms-omega-crossbar-image.jpg"/></a>
+            </div>
+<div class="scroll-none crossbar__item shadow--small-y">
+                <a href="/orbital-update/"><img src="/media/legacy/uploads/2024/03/nms-orbital-crossbar-image.jpg"/></a>
+            </div>
+<div class="scroll-none crossbar__item shadow--small-y">
+                <a href="/worlds-part-i-update/"><img src="/media/legacy/uploads/2024/07/nms-worlds-part-i-crossbar-image.jpg"/></a>
+            </div>
+            <div class="scroll-none crossbar__item shadow--small-y">
+                <a href="/worlds-part-ii-update/"><img src="/media/nqab04wa/nms-worlds-part-ii-crossbar-image.jpg"/></a>
+            </div>
+</div>
+</div>
+</section>
+        </div>
+    </section>
+</main>
+
+
+
+
+        <footer class="footer" role="contentinfo"><!-- nav --><nav class="nav" role="navigation">
+<ul class="menu menu-footer padding--horizontal-none">
+<li id="menu-item-1671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1671 menu__item"><a href="/contact/">Contact</a></li>
+<li id="menu-item-1601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1601 menu__item"><a href="/about/">About</a></li>
+<li id="menu-item-1611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1611 menu__item"><a href="/news/">News</a></li>
+<li id="menu-item-8489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8489 menu__item"><a href="/press/">Press</a></li>
+<li id="menu-item-7572" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7572 menu__item"><a href="https://hellogames.zendesk.com/">Help Centre</a></li>
+<li id="menu-item-5722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5722 menu__item"><a href="/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-6474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6474 menu__item"><a href="/end-user-licence-agreement/">End user licence agreement</a></li>
+</ul>
+</nav><!-- /nav -->
+<ul class="list--horizontal social-list">
+<li><a href="https://twitter.com/nomanssky" title="No Man's Sky on Twitter" target="_blank" class="icon icon--twitter" rel="noopener">Twitter</a></li>
+<li><a href="https://en-gb.facebook.com/NoMansSky/" title="No Man's Sky on Facebook" target="_blank" class="icon icon--facebook" rel="noopener">Twitter</a></li>
+<li><a href="http://www.hellogames.org/" title="Hello Games" target="_blank" class="icon icon--more" rel="noopener">Twitter</a></li>
+</ul>
+</footer><!-- /footer -->
+<p></p>
+<!-- /wrapper -->
+    </div>
+
+
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZ896W3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    
+
+
+    
+</body>
+</html>

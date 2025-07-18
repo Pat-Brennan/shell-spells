@@ -1,0 +1,39 @@
+#Requires -RunAsAdministrator
+$computers = @(
+  "Computer A",
+  "Computer B",
+  "Computer C"
+)
+
+Write-Host "Please Enter Administrator Level Credentials:"
+$adminCred = Get-Credential
+
+Invoke-Command -ComputerName $computers -Credential $adminCred -ScriptBlock {
+
+  # Define a list of printers to remove
+  $printersToRemove = @(
+    "Send to OneNote 2016",
+    "Microsoft Print to PDF",
+    "Microsoft XPS Document Writer",
+    "Fax"
+  )
+
+  # Loop through each printer in the list
+  foreach ($printer in $printersToRemove) {
+    try {
+      # Check if the printer exists before trying to remove it
+      if (Get-Printer -Name $printer -ErrorAction SilentlyContinue) {
+        Remove-Printer -Name $printer
+        Write-Host "✅ Successfully removed printer: '$printer'"
+      }
+      else {
+        Write-Host "ℹ️ Printer not found, skipping: '$printer'"
+      }
+    }
+    catch {
+      Write-Error "❌ Failed to remove printer '$printer': $($_.Exception.Message)"
+    }
+  }
+}
+
+Write-Host "--- ✨ Script Complete ---"
