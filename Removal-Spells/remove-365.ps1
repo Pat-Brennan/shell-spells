@@ -1,18 +1,3 @@
-<#
-.SYNOPSIS
-    This script uninstalls specific Microsoft 365 language packs using a direct execution method.
-
-.DESCRIPTION
-    The script finds the exact uninstall command for each program in the Windows Registry and executes it
-    directly using cmd.exe. This method is highly reliable, especially for Click-to-Run installers and when
-    running under management tools like NinjaRMM.
-
-.NOTES
-    Author: Gemini
-    Date: 2024-07-03
-    Requires: Run this script with Administrator privileges. The script includes a check for this.
-#>
-
 # --- Administrator Check ---
 # This block checks if the script is running with elevated (Administrator) privileges.
 if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
@@ -32,7 +17,11 @@ $programsToUninstall = @(
   "Microsoft 365 - en-us",
   "Microsoft 365 - es-es",
   "Microsoft 365 - fr-fr",
-  "Microsoft 365 - pt-br"
+  "Microsoft 365 - pt-br",
+  "Microsoft OneNote - en-us",
+  "Microsoft OneNote - es-es",
+  "Microsoft OneNote - fr-fr",
+  "Microsoft OneNote - pt-br"
 )
 
 # Registry paths where information about installed programs is stored.
@@ -72,27 +61,27 @@ foreach ($programName in $programsToUninstall) {
                   
           # Check the exit code of the completed process. 0 usually means success.
           if ($process.ExitCode -eq 0) {
-            Write-Host "  Successfully executed uninstall for '$programName'. Exit Code: 0 (Success)" -ForegroundColor Green
+            Write-Host " ✅ Successfully executed uninstall for '$programName'. Exit Code: 0 (Success)" -ForegroundColor Green
           }
           else {
             # A non-zero exit code indicates a potential problem with the uninstaller itself.
-            Write-Warning "  The uninstaller for '$programName' finished with Exit Code: $($process.ExitCode). This may indicate an issue."
+            Write-Warning " ℹ️ The uninstaller for '$programName' finished with Exit Code: $($process.ExitCode). This may indicate an issue."
           }
         }
         catch {
           # This catches errors if Start-Process itself fails.
-          Write-Error "  A PowerShell error occurred while trying to launch the uninstaller for '$programName'."
+          Write-Error " ❌ A PowerShell error occurred while trying to launch the uninstaller for '$programName'."
           Write-Error $_
         }
       }
       else {
-        Write-Warning "  Found program, but it has no UninstallString in the registry."
+        Write-Warning " ℹ️ Found program, but it has no UninstallString in the registry."
       }
     }
   }
 
   if (-not $packageFound) {
-    Write-Host "  Could not find '$programName' in the registry. It may already be uninstalled." -ForegroundColor Yellow
+    Write-Host " ⚠️ Could not find '$programName' in the registry. It may already be uninstalled." -ForegroundColor Yellow
   }
   Write-Host "--------------------------------------------------------------------"
 }
