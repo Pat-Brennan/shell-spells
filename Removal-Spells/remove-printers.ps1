@@ -3,6 +3,7 @@
 # Define a list of printers to remove
 $printersToRemove = @(
   "Send to OneNote 2016",
+  "OneNote (Desktop)"
   "Microsoft Print to PDF",
   "Microsoft XPS Document Writer",
   "Fax"
