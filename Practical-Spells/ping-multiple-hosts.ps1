@@ -1,6 +1,11 @@
+Import-Module -Name ImportExcel -Scope Global
+
 # Define the list of computers (names or IP addresses) to ping
 $computers = @(
-  #INSERT IPs HERE
+"VT2F-REFO-176T",
+"VT3F-CIRC-177X",
+"VT1F-TEEN1-178",
+"VT1F-TEEN2-179"
 )
 
 # Use a ForEach loop to iterate through the list
@@ -30,3 +35,5 @@ $results = foreach ($computer in $computers) {
 
 Write-Host "`n--- Ping Results Summary ---`n" -ForegroundColor Green
 $results | Format-Table -AutoSize
+
+$results | Export-Excel -Path "C:\temp\NetworkPingName.xlsx" -AutoSize -AutoFilter -TableName "PingResults"
