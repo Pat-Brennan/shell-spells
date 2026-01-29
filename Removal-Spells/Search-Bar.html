@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .outer-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 45vh;
+    }
+
+    /* Keeps the purple area tight around the search box */
+    .ourple {
+      background-color: #4f005c;
+      padding: 60px;
+      display: inline-flex; /* not full width anymore */
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    .search-container {
+      background-color: white;
+      width: 700px;
+      max-width: 90vw;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 15px;
+      flex-wrap: nowrap; /* always side by side */
+    }
+
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #f7f5f4;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      color: black;
+      transition: background 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .tab:hover {
+      background-color: #eee;
+    }
+
+    .tab.active {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-bottom: none;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .search-box {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 10px;
+    }
+
+    .search-box input {
+      flex: 1;
+      padding: 12px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+      min-width: 0;
+    }
+
+    .search-box button {
+      padding: 0 20px;
+      background-color: #4f005c;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .search-box button:hover {
+      background-color: #6a0082;
+    }
+
+    .options label {
+      font-size: 14px;
+    }
+
+    /* RESPONSIVENESS */
+    @media (max-width: 700px) {
+      .search-container {
+        width: 100%;
+        padding: 15px;
+      }
+
+      .tab {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .search-box input {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* only stack the input/button if absolutely necessary */
+      .search-box {
+        flex-wrap: wrap;
+      }
+
+      .search-box input {
+        width: 100%;
+        border-radius: 4px;
+        border-right: 1px solid #ccc;
+        margin-bottom: 8px;
+      }
+
+      .search-box button {
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="outer-wrapper">
+    <div class="ourple">
+      <div class="search-container">
+        <div class="tabs">
+          <div class="tab active" data-tab="onesearch">Search Website</div>
+          <div class="tab" data-tab="options">Search Options</div>
+        </div>
+
+        <div class="tab-content active" id="onesearch">
+          <div class="search-box">
+            <input type="text" id="site-search-input" class="default" placeholder="Search our website for keywords, phrases, and more…" required />
+            <button id="site-search-button">SEARCH</button>
+          </div>
+        </div>
+
+        <div class="tab-content" id="options">
+          <div class="search-box">
+            <input type="text" id="options-search-input" class="default" placeholder="Search catalog, events, or both…" />
+            <button id="options-search-button">SEARCH</button>
+          </div>
+          <div class="options">
+            <input type="checkbox" id="search-catalog" />
+            <label for="search-catalog">CATALOG</label><br />
+            <input type="checkbox" id="search-events" />
+            <label for="search-events">EVENTS</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.add("active");
+    });
+  });
+
+  document.getElementById("site-search-button").addEventListener("click", function () {
+    const query = document.getElementById("site-search-input").value.trim();
+    if (query) {
+      const encodedQuery = encodeURIComponent(query);
+      window.location.href = `https://test.camden.njlibraries.org/backdropcms/search?keys=${encodedQuery}`;
+    }
+  });
+
+  document.getElementById("options-search-button").addEventListener("click", function () {
+    const query = document.getElementById("options-search-input").value.trim();
+    const searchCatalog = document.getElementById("search-catalog").checked;
+    const searchEvents = document.getElementById("search-events").checked;
+
+    if (!query) return;
+    const encodedQuery = encodeURIComponent(query);
+
+    if (!searchCatalog && !searchEvents) {
+      alert("Please select at least one option: Catalog or Events.");
+      return;
+    }
+
+    if (searchCatalog) {
+      window.open(`https://camden.bywatersolutions.com/cgi-bin/koha/opac-search.pl?q=${encodedQuery}`, '_blank');
+    }
+    if (searchEvents) {
+      window.open(`https://events.camdencountylibrary.org/?q=${encodedQuery}`, '_blank');
+    }
+  });
+
+  document.querySelectorAll(".default").forEach(input => {
+    input.addEventListener("keypress", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        if (input.id === "site-search-input") {
+          document.getElementById("site-search-button").click();
+        } else if (input.id === "options-search-input") {
+          document.getElementById("options-search-button").click();
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
