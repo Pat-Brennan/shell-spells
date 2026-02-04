@@ -1,37 +1,42 @@
-Write-Host "Monitoring ALL print queues..." -ForegroundColor Cyan
+# PRINT MONITOR USING LEGACY UI
+
+Write-Host "Monitoring ALL print queues using Legacy UI... TEST 3" -ForegroundColor Cyan
 $OpenQueues = @{}
 
 while ($true) {
-    # Get all printers installed on the system
+    # Get all printers
     $Printers = Get-Printer
 
     foreach ($Printer in $Printers) {
         $Name = $Printer.Name
-        # Check if there are active jobs for this specific printer
-        $Jobs = Get-PrintJob -PrinterName $Name -ErrorAction SilentlyContinue
+        
+        # Check for active jobs (ignoring ones already paused)
+        $Jobs = Get-PrintJob -PrinterName $Name -ErrorAction SilentlyContinue | 
+                Where-Object { $_.JobStatus -notlike "*Paused*" }
 
         if ($Jobs -and -not $OpenQueues[$Name]) {
-            Write-Host "Active job found on: $Name. Opening queue..." -ForegroundColor Green
+            Write-Host "Job detected on: $Name. Holding for 5 seconds..." -ForegroundColor Green
 
-            $Jobs | Suspend-Printjob -ErrorAction SilentlyContinue
+            # 1. Pause the job so it stays visible in the legacy window
+            $Jobs | Suspend-PrintJob -ErrorAction SilentlyContinue
 
+            # 2. Open the CLASSIC Legacy Queue (Bypasses the 'Get an app' error)
             Start-Process "rundll32.exe" -ArgumentList "printui.dll,PrintUIEntry /o /n `"$Name`""
+            
+            # 3. Give you time to see it
+            Start-Sleep -Seconds 5
 
-            Start-Sleep -Seconds 10
-
-            $Jobs | Resume-Printjob -ErrorAction SilentlyContinue
-
-            # Mark this printer as "Window Open" so it doesn't spam more windows
+            # 4. Release to the Ricoh
+            Write-Host "Releasing job..." -ForegroundColor Yellow
+            $Jobs | Resume-PrintJob -ErrorAction SilentlyContinue
+            
             $OpenQueues[$Name] = $true
         }
         elseif (-not $Jobs -and $OpenQueues[$Name]) {
-            # Reset the tracker once the queue is empty
-            Write-Host "Job cleared for: $Name." -ForegroundColor Yellow
             $OpenQueues[$Name] = $false
         }
     }
 
-    # Reduced sleep to 0.5 seconds to catch fast-processing Ricoh jobs
     Start-Sleep -Milliseconds 500
 }
 
@@ -40,10 +45,49 @@ while ($true) {
 
 
 
+# PRINT MONITOR USING MODERN UI
+
+# Write-Host "Monitoring ALL print queues... TEST 2" -ForegroundColor Cyan
+# $OpenQueues = @{}
+
+# while ($true) {
+#     # Get all printers installed on the system
+#     $Printers = Get-Printer
+
+#     foreach ($Printer in $Printers) {
+#         $Name = $Printer.Name
+#         # Check if there are active jobs for this specific printer
+#         $Jobs = Get-PrintJob -PrinterName $Name -ErrorAction SilentlyContinue
+
+#         if ($Jobs -and -not $OpenQueues[$Name]) {
+#             Write-Host "Active job found on: $Name. Opening queue..." -ForegroundColor Green
+
+#             $Jobs | Suspend-Printjob -ErrorAction SilentlyContinue
+
+#             Start-Process "rundll32.exe" -ArgumentList "printui.dll,PrintUIEntry /o /n `"$Name`""
+
+#             Start-Sleep -Seconds 10
+
+#             $Jobs | Resume-Printjob -ErrorAction SilentlyContinue
+
+#             # Mark this printer as "Window Open" so it doesn't spam more windows
+#             $OpenQueues[$Name] = $true
+#         }
+#         elseif (-not $Jobs -and $OpenQueues[$Name]) {
+#             # Reset the tracker once the queue is empty
+#             Write-Host "Job cleared for: $Name." -ForegroundColor Yellow
+#             $OpenQueues[$Name] = $false
+#         }
+#     }
+
+#     # Reduced sleep to 0.5 seconds to catch fast-processing Ricoh jobs
+#     Start-Sleep -Milliseconds 500
+# }
 
 
 
-# Write-Host "Monitoring ALL print queues..." -ForegroundColor Cyan
+
+# Write-Host "Monitoring ALL print queues... TEST 1" -ForegroundColor Cyan
 # $OpenQueues = @{}
 
 # while ($true) {
