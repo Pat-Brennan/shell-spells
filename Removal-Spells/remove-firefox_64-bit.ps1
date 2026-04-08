@@ -2,6 +2,18 @@
 <#
 .SYNOPSIS
     Silently uninstalls Mozilla Firefox from a Windows 11 system.
+
+.DESCRIPTION
+    This script checks for active Firefox processes and terminates them, 
+    locates the uninstaller via the Windows Registry, 
+    executes the uninstaller with silent parameters, 
+    and cleans up any leftover directories.
+
+.NOTES
+  Version:        1.0
+
+.AUTHOR
+    Pat Brennan
 #>
 
 $appName = "Mozilla Firefox"
