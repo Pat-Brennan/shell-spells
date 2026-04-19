@@ -1,3 +1,20 @@
+<#
+.SYNOPSIS
+    Checks the SSL certificate expiration for a list of URLs.
+.DESCRIPTION
+    This script connects to each specified URL on port 443, retrieves the SSL certificate, and
+    checks how many days are remaining until the certificate expires. It will warn if the certificate is set to expire within 30 days.
+.PARAMETER Urls
+    An array of URLs to check. You can include the protocol (https://) or just the domain name. The script will handle both cases.
+.EXAMPLE
+    .\SSL-checker.ps1 -Urls "camdencountylibrary.org", "www.camdencountylibrary.org", "google.com", "github.com"
+    This will check the SSL certificates for the specified domains and output the expiration status.
+.NOTES
+    - This script uses the TcpClient and SslStream classes to directly connect to the server and retrieve the SSL certificate, which provides more accurate results and better error handling compared to using WebRequest.
+    - Make sure to run this script in an environment that has access to the specified URLs and that the necessary .NET libraries are available.
+    - The script ignores certificate validation errors to allow checking of expired or otherwise invalid certificates, but it will still report the expiration status based on the certificate information retrieved.
+#>
+
 param (
     [string[]]$Urls = @(
         "camdencountylibrary.org",
