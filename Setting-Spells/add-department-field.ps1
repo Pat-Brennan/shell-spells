@@ -39,4 +39,22 @@ switch -Wildcard ($ComputerName) {
   Default { $department = "UNKNOWN" }
 }
 
-ninjarmm-cli set department $department
+Set-NinjaProperty Department $department
+
+
+
+Acceptable values: 
+0d01be9e-bfec-4f8d-9f63-1bca0d960878, #? MAINTENANCE
+1315b2f1-9a1c-47bd-b2a7-552d7d78d2af, #? BUSINESS
+1c866dd6-5c29-4a02-bf25-6389830edacd, #? ADULT SERVICES
+1ca7cc4e-8fad-4072-a4b8-92bd784805c7,#? SECURITY
+2dacdae7-8ffc-48a5-9422-2c7f6de03084,#? HR
+75686bc9-2d5c-4726-8fc8-dc582f534af1, #? CIRC
+77753a94-5f21-4d63-a473-3c1da7b7ad6e, #? YOUTH SERVICES
+7be0e4ec-f8f1-4ecb-b309-64548b26e7d9, #? ADMIN
+ad7596f5-9eb0-4265-a219-aa3ce82e849a, #? LVCC
+b53d9fe9-658a-4427-a864-d12c44583efa, #? PR
+e85269e9-1582-42d7-a377-2c206cb8b7ea, #? TECH SERVICES
+e880e47d-c65c-4e31-a17b-c67a1adfb412 #? IT
+
+ 
