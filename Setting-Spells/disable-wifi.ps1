@@ -8,17 +8,23 @@
 .NOTES
     - THIS SCRIPT IS MEANT TO BE RUN IN NINJAONE
 #>
-$BiosPassword = $env:BiosPassword
+$BIOSPassword = $env:BiosPassword
 
 if([string]::IsNullOrEmpty($BiosPassword)) {
     Write-Host "❗ Error: No BIOS password provided. Exiting script."
     exit 1
 }
 
+if(-not(Get-PackageProvider -Name NuGet -ListAvailable -ErrorAction SilentlyContinue)) {
+    Write-Output "🔄 Installing NuGet Package Provider..."
+    Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+}
+
 if(-not(Get-Module -ListAvailable -Name "DellBIOSProvider" -ErrorAction SilentlyContinue)) {
     Write-Output "🔄 Installing DellBIOSProvider module..."
-    Install-Module -Name DellBIOSProvider -Force -ApplicationLicense -Scope AllUsers
+    Install-Module -Name DellBIOSProvider -Force
 }
+
 
 Import-Module DellBIOSProvider
 
@@ -28,6 +34,7 @@ try {
   Set-Item -Path "DellSMBIOS:\Wireless\WirelessLan" -Value "Disabled" -Password $BIOSPassword
 
   Write-Output "✅ WiFi disabled successfully."
+  Restart-Computer -Force
 
 } catch {
 
