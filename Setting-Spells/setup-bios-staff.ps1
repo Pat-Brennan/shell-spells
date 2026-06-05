@@ -1,7 +1,7 @@
 
 
-$NEW_BIOSPassword = $env:BiosPassword
-$CURRENT_BIOSPassword = $env:CurrentBiosPassword
+$NEW_BIOSPassword = $env:new_biospassword
+$CURRENT_BIOSPassword = $env:current_biospassword
 
 if([string]::IsNullOrEmpty($NEW_BIOSPassword)) {
     Write-Host "❗ Error: No new BIOS password provided. Exiting script."
@@ -22,6 +22,7 @@ if(-not(Get-Module -ListAvailable -Name "DellBIOSProvider" -ErrorAction Silently
 
 Import-Module DellBIOSProvider
 
+#Update BIOS Settings
 try {
 
   Set-Location DellSMBIOS:\
@@ -33,9 +34,10 @@ try {
     "DellSMBios:\Wireless\WirelessLan" = "Disabled"
     "DellSMBios:\PowerManagement\DeepSleepCtrl" = "Disabled"
     "DellSMBios:\PowerManagement\BlockSleep" = "Enabled"
+    "DellSMBios:\PowerManagement\WakeOnLan" = "LanWlan"
     "DellSMBios:\PowerManagement\AutoOn" = "Everyday"
-    "DellSMBios:\PowerManagement\AutoOnHr" = "07"
-    "DellSMBios:\PowerManagement\AutoOnMin" = "00"
+    "DellSMBios:\PowerManagement\AutoOnHr" = "7"
+    "DellSMBios:\PowerManagement\AutoOnMn" = "0"
     "DellSMBios:\SystemConfiguration\InternalSpeaker" = "Enabled"
     "DellSMBios:\SystemConfiguration\Microphone" = "Enabled"
   }
@@ -54,14 +56,15 @@ try {
   }
 
   Write-Output "🔒 Configuring BIOS Password ..."
-
-  if ([string]::IsNullOrEmpty($CURRENT_BIOSPassword)) {
+  if ($NEW_BIOSPassword -eq $CURRENT_BIOSPassword) {
+    # The passwords match. Skip the change.
+    Write-Output "✅ Target BIOS password already matches the current password. No changes needed."
+  } elseif ([string]::IsNullOrEmpty($CURRENT_BIOSPassword)) {
     Set-Item -path "DellSMBIOS:\Security\AdminPassword" -Value $NEW_BIOSPassword
     Write-Output "✅ BIOS password set successfully."
   } else {
     Set-Item -path "DellSMBIOS:\Security\AdminPassword" -Value $NEW_BIOSPassword -Password $CURRENT_BIOSPassword -ErrorAction Stop
     Write-Output "✅ BIOS password updated successfully from Previous BIOS Password."
-    <# Action to perform if the condition is true #>
   }
 
   Write-Output "🎉 All BIOS settings applied successfully. System will now reboot to apply changes.
