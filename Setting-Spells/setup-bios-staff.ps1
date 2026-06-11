@@ -37,7 +37,7 @@ try {
     "DellSMBios:\PowerManagement\WakeOnLan" = "LanWlan"
     "DellSMBios:\PowerManagement\AutoOn" = "Everyday"
     "DellSMBios:\PowerManagement\AutoOnHr" = "7"
-    "DellSMBios:\PowerManagement\AutoOnMn" = "0"
+    "DellSMBios:\PowerManagement\AutoOnMin" = "0"
     "DellSMBios:\SystemConfiguration\InternalSpeaker" = "Enabled"
     "DellSMBios:\SystemConfiguration\Microphone" = "Enabled"
   }
