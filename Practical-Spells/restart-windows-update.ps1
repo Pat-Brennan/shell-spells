@@ -1,6 +1,8 @@
 
 Write-Output "ℹ️ Initializing windows update restart..."
 
+Set-Service -name "usosvc" -StartupType Automatic
+
 $services = @("bits", "wuauserv", "cryptSvc", "msiserver", "UsoSvc")
 
 foreach ($service in $services) {
