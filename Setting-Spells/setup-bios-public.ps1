@@ -29,7 +29,7 @@ try {
 
   Write-output "⚙️ Applying BIOS settings..."
 
-    $BIOSSettings = @{
+    $BIOSSettings = [ordered]@{
     "DellSMBios:\Wireless\BluetoothDevice" = "Disabled"
     "DellSMBios:\Wireless\WirelessLan" = "Disabled"
     "DellSMBios:\PowerManagement\DeepSleepCtrl" = "Disabled"

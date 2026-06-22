@@ -34,6 +34,8 @@ try {
   Set-Item -Path "DellSMBIOS:\Wireless\WirelessLan" -Value "Disabled" -Password $BIOSPassword
 
   Write-Output "✅ WiFi disabled successfully."
+
+  # Restart the computer to apply changes
   Restart-Computer -Force
 
 } catch {
