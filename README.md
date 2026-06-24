@@ -8,11 +8,10 @@ and scribed to automate the mundane, banish the bugs, and conjure order out of c
 ## 📜 The Tomes (Directory Structure)
 
 ### 🍃 Intro-Spells (Cantrips)
-*Perfect for apprentices.* These foundational scripts serve as an introduction to the arcane arts of PowerShell. 
-Start here to learn the basic somatic components of automation before moving on to larger network enchantments.
+These foundational scripts were the beginnings of me dabbling with PowerShell. 
 
 ### 🧊 Install-Spells (Conjuration)
-Need to summon an application from the ether? These incantations will pull down software, packages, 
+A Summoning! These incantations will pull down software, packages, 
 and tools onto your local machine without lifting a finger. 
 
 ### 🔥 Removal-Spells (Banishment)
@@ -24,12 +23,11 @@ They cleanly and permanently rid your system of unwanted bloatware—whether you
 Reshape your environment to your will. These scripts alter system configurations, tweak Windows settings, and transmute the very fabric of your OS to suit your administrative needs.
 
 ### 🛠️ Practical-Spells (Utility Magic)
-Your daily drivers. These are the versatile, everyday enchantments meant to save you time on routine administrative tasks, file management, and system maintenance. 
+These are the versatile, everyday enchantments meant to save you time on routine administrative tasks, file management, and system maintenance. 
 
 ---
 
 ## 📖 Notable Loose Scrolls
-
 Amongst the categorized tomes, you may find a few loose spells. The scribe is still getting to these! 
 
 ---
