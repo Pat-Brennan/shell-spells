@@ -29,7 +29,7 @@ try {
 
   Write-output "⚙️ Applying BIOS settings..."
 
-    $BIOSSettings = [ordered]@{
+    $BIOSSettings = [ordered] @{
     "DellSMBios:\Wireless\BluetoothDevice" = "Disabled"
     "DellSMBios:\Wireless\WirelessLan" = "Disabled"
     "DellSMBios:\PowerManagement\DeepSleepCtrl" = "Disabled"
@@ -56,17 +56,26 @@ try {
   }
 
   Write-Output "🔒 Configuring BIOS Password ..."
-  if ($NEW_BIOSPassword -eq $CURRENT_BIOSPassword) {
-    # The passwords match. Skip the change.
-    Write-Output "✅ Target BIOS password already matches the current password. No changes needed."
+
+    if ([string]::IsNullOrEmpty($NEW_BIOSPassword)) {
+
+      Write-Output "ℹ️ No new BIOS password provided. Keeping the current BIOS password unchanged."
+
+    } elseif ($NEW_BIOSPassword -eq $CURRENT_BIOSPassword) {
+
+    Write-Output "ℹ️ Target BIOS password already matches the current password. No changes needed."
+
   } elseif ([string]::IsNullOrEmpty($CURRENT_BIOSPassword)) {
-    Set-Item -path "DellSMBIOS:\Security\AdminPassword" -Value $NEW_BIOSPassword
+
+    Set-Item -path "DellSMBIOS:\Security\AdminPassword" -Value $NEW_BIOSPassword -ErrorAction Stop
     Write-Output "✅ BIOS password set successfully."
+
   } else {
+
     Set-Item -path "DellSMBIOS:\Security\AdminPassword" -Value $NEW_BIOSPassword -Password $CURRENT_BIOSPassword -ErrorAction Stop
     Write-Output "✅ BIOS password updated successfully from Previous BIOS Password."
-  }
 
+  }
   Write-Output "🎉 All BIOS settings applied successfully. System will now reboot to apply changes.
   "
   # Restart the computer to apply changes
