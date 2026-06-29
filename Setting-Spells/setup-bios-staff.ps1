@@ -1,4 +1,16 @@
+<#
 
+.SYNOPSIS
+    This script configures BIOS settings on Dell systems using the DellBIOSProvider module.
+.DESCRIPTION
+    The script checks for the presence of the DellBIOSProvider module and installs it if necessary
+    It then applies a set of predefined BIOS settings and configures the BIOS password based on the provided environment variables.
+.PARAMETER new_biospassword
+    The new BIOS password to be set. This parameter is necessary if there is no BIOS password currently set or if you want to change the existing BIOS password.
+.PARAMETER current_biospassword
+    The current BIOS password, if any.
+
+#>
 
 $NEW_BIOSPassword = $env:new_biospassword
 $CURRENT_BIOSPassword = $env:current_biospassword
@@ -77,11 +89,10 @@ try {
 
   }
 
-  Write-Output "🎉 All BIOS settings applied successfully. System will now reboot to apply changes.
+  Write-Output "🎉 All BIOS settings applied successfully. System will reboot in one minute to apply changes.
   "
   # Restart the computer to apply changes
-  Start-Sleep -Seconds 5
-  Restart-Computer -Force
+  shutdown.exe /r /t 60 /c "Rebooting to apply BIOS settings changes."
 
 } catch {
 
