@@ -15,11 +15,6 @@
 $NEW_BIOSPassword = $env:new_biospassword
 $CURRENT_BIOSPassword = $env:current_biospassword
 
-if([string]::IsNullOrEmpty($NEW_BIOSPassword)) {
-    Write-Host "❗ Error: No new BIOS password provided. Exiting script."
-    exit 1
-}
-
 #Installs Package Provider
 if(-not(Get-PackageProvider -Name NuGet -ListAvailable -ErrorAction SilentlyContinue)) {
     Write-Output "🔄 Installing NuGet Package Provider..."
