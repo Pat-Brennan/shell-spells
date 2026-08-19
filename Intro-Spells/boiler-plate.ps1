@@ -10,57 +10,63 @@
 #>
 
 
-#? Set the Stage: What do I need?
+#? 🛠️ Set the Stage: What do I need?
 begin {
 
   <# 
   
-  Insert any initialization code here -
+  ℹ️ TODO: Insert any initialization code here -
   such as defining variables, importing modules, creating arrays or hash tables. 
   
-  $items = @('item1', 'item2', 'item3')  # Example of initializing an array
+  🧪 EXAMPLE: $items = @('item1', 'item2', 'item3')
 
   #>
 
 }
 
-#? Perform: How will I use it?
+#? 🧠 Perform: How will I use the things I just made?
 process {
 
     try {
           <#
           
-          TODO: Insert the main logic of the script here. 
+          ℹ️ TODO: Insert the main logic of the script here. 
           This is where you would process input, 
           perform calculations, or manipulate data.
           
-          EXAMPLE: foreach ($item in $input) {
+          🧪 EXAMPLE: foreach ($item in $items) {
                        # Process each item
                    }
+
+          🧪 EXAMPLE: if ($items.length -gt 0) {
+                          # Do something
+                      } else {
+                          # Handle empty case
+                      }
 
           #>
     }
     catch {
           <#
           
-          TODO: Insert error handling logic here.
+          ℹ️ TODO: Insert error handling logic here.
           This is where you would log errors, 
           maybe clean up resources, or provide user feedback.
           
-          EXAMPLE: Write-Error "An error occurred: $_"
+          🧪 EXAMPLE: Write-Error "An error occurred: $_"
 
           #>
     }
 
 }
 
-#? End Set: What have I done? 
+#? 👋 End Set: What did I do? 
 end {
     <#
     
-    TODO: Insert any finalization code here.
+    ℹ️ TODO: Insert any finalization code here.
 
-    Example: Write-Host "Script execution completed successfully."
+    🧪 EXAMPLE: Write-Host "Script execution completed successfully."
 
     #>
 
