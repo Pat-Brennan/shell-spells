@@ -16,28 +16,28 @@ $ErrorActionPreference = "Continue"
 $adapters = Get-NetAdapter | Where-Object { $_.Status -eq "Up" -and $_.Virtual -eq $false }
 
 if (-not $adapters) {
-    Write-Error "No active physical network adapters found."
+    Write-Error "❗No active physical network adapters found."
     exit 1
 }
 
 foreach ($adapter in $adapters) {
     try {
 
-        Write-Host "Setting adapter '$($adapter.Name)' to DHCP..."
+        Write-Host "ℹ️ Setting adapter '$($adapter.Name)' to DHCP..."
         Set-NetIPInterface -InterfaceIndex $adapter.InterfaceIndex -AddressFamily IPv4 -Dhcp Enabled -ErrorAction Stop
-        Write-Host "Successfully set adapter '$($adapter.Name)' to DHCP."
+        Write-Host "✅ Successfully set adapter '$($adapter.Name)' to DHCP."
 
         Set-DnsClientServerAddress -InterfaceIndex $adapter.InterfaceIndex -ResetServerAddresses -ErrorAction Stop
         Write-Host "Successfully reset DNS server addresses for adapter '$($adapter.Name)'."
     
       } catch {
-        Write-Error "Failed to set adapter '$($adapter.Name)' to DHCP: $_"
+        Write-Error "❗Failed to set adapter '$($adapter.Name)' to DHCP: $_"
     }
 }
 
-write-host "Requesting new dhcp lease for all adapters..."
+write-host "ℹ️ Requesting new dhcp lease for all adapters..."
 
 ipconfig /renew * | Out-Null
 
-write-host "DHCP configuration completed."
+write-host "✅ DHCP configuration completed."
 Get-NetIPConfiguration | Select-Object InterfaceAlias, IPv4Address, DNSServer | Format-Table -AutoSize
