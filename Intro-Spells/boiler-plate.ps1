@@ -10,7 +10,7 @@
 #>
 
 
-#? Set up the Bucket
+#? Set the Stage: What do I need?
 begin {
 
   <# 
@@ -24,7 +24,7 @@ begin {
 
 }
 
-#? Put things in the Bucket
+#? Perform: How will I use it?
 process {
 
     try {
@@ -54,7 +54,7 @@ process {
 
 }
 
-#? Clean up the Bucket, or report what's in the bucket currently.
+#? End Set: What have I done? 
 end {
     <#
     
