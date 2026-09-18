@@ -1,13 +1,26 @@
 Write-Output "👁️ HIDDEN SERVICES (Registry vs SCM Mismatch)"
 
-$regServices = (Get-ChildItem -Path "HKLM:\SYSTEM\CurrentControlSet\Services").PSChildName
-
+$regServices = Get-ChildItem -Path "HKLM:\SYSTEM\CurrentControlSet\Services" | 
+    Where-Object { (Get-ItemProperty $_.PSPath -Name "Type" -ErrorAction SilentlyContinue).Type -ge 16 } |
+    Select-Object -ExpandProperty PSChildName
 
 $scmServices = (Get-Service).Name
 
 $hiddenServices = Compare-Object -ReferenceObject $regServices -DifferenceObject $scmServices | 
     Where-Object { $_.SideIndicator -eq "<=" } | 
     Select-Object -ExpandProperty InputObject
+
+if ($hiddenServices) {
+    foreach ($service in $hiddenServices) {
+        $regPath = "HKLM:\SYSTEM\CurrentControlSet\Services\$service"
+        $imagePath = (Get-ItemProperty -Path $regPath -Name "ImagePath" -ErrorAction SilentlyContinue).ImagePath
+        
+        Write-Output "⚠️ HIDDEN SERVICE DETECTED: $service"
+        Write-Output "ℹ️ Path: $imagePath`n"
+    }
+} else {
+    Write-Output "✅ No hidden Win32 services detected.`n"
+}
 
 foreach ($service in $hiddenServices) {
     $regPath = "HKLM:\SYSTEM\CurrentControlSet\Services\$service"
