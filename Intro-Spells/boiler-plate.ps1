@@ -44,6 +44,8 @@ process {
                           # Handle empty case
                       }
 
+          🧪 EXAMPLE: Get-Process | Where-Object { $_.CPU -gt 100 } | Stop-Process -Force
+
           #>
     }
     catch {
