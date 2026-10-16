@@ -49,18 +49,37 @@ try {
     "DellSMBios:\SystemConfiguration\Microphone" = "Enabled"
   }
 
-  foreach ($setting in $BIOSSettings.GetEnumerator()) {
-    try {
-        if ([string]::IsNullOrEmpty($CURRENT_BIOSPassword)) {
-            Set-Item -Path $setting.Key -Value $setting.Value -ErrorAction Stop
-        } else {
-            Set-Item -Path $setting.Key -Value $setting.Value -Password $CURRENT_BIOSPassword -ErrorAction Stop
+$failedSettings = 0
+
+    foreach ($setting in $BIOSSettings.GetEnumerator()) {
+        try {
+            # 1. Read the current value from the BIOS
+            $currentSetting = Get-Item -Path $setting.Key -ErrorAction SilentlyContinue
+            
+            # The value is usually stored in the 'CurrentValue' property
+            $currentValue = $currentSetting.CurrentValue
+
+            # 2. Check if it already matches your desired state
+            if ($currentValue -eq $setting.Value) {
+                Write-Output "✅ $($setting.Key) is already set to $($setting.Value). Skipping."
+                continue # Moves to the next setting without triggering password validation
+            }
+
+            # 3. If it does not match, attempt to apply the new setting
+            Write-Output "🔄 Changing $($setting.Key) from '$currentValue' to '$($setting.Value)'..."
+            
+            if ([string]::IsNullOrEmpty($CURRENT_BIOSPassword)) {
+                Set-Item -Path $setting.Key -Value $setting.Value -ErrorAction Stop
+            } else {
+                Set-Item -Path $setting.Key -Value $setting.Value -Password $CURRENT_BIOSPassword -ErrorAction Stop
+            }
+            Write-Output "✅ Successfully updated $($setting.Key)"
+            
+        } catch {
+            Write-Warning "⚠️ Failed to set $($setting.Key): $_"
+            $failedSettings++
         }
-        Write-Output "✅ Set $($setting.Key) to $($setting.Value)"
-    } catch {
-        Write-Warning "⚠️ Failed to set $($setting.Key): $_"
     }
-  }
 
   Write-Output "🔒 Configuring BIOS Password ..."
 
