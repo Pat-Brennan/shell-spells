@@ -59,8 +59,5 @@ foreach ($User in $Users) {
         Set-Acl -Path $FolderPath -AclObject $Acl
 
         Write-Output "Successfully set permissions for $DomainUser"
-        Write-Output "Successfully set permissions for $DomainUser"
-        Write-Output "Successfully set permissions for $DomainUser"
-        Write-Output "Successfully set permissions for $DomainUser"
     }
 }
