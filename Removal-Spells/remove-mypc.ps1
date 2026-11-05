@@ -10,7 +10,8 @@
 
 #Requires -RunAsAdministrator
 
-$path = "C:\MyPC\User Deploy - 7.0.0.35\uninstall_clients.exe"
+#! Ensure this line matches your current version of MyPC. Update the path if necessary.
+$path = "C:\MyPC\User Deploy - 7.1.0.14\uninstall_clients.exe"
 
 if (!(Test-Path $path)) {
     Write-Warning "⚠️ Uninstall executable not found at $path. Please check the path and try again."
