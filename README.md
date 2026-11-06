@@ -1,6 +1,6 @@
 # 🐢 Shell Spells: A PowerShell Grimoire 🔮
 
-Welcome, traveler, to **Shell Spells**—a living, breathing grimoire of PowerShell incantations carefully gathered 
+Welcome, traveler, to **Shell Spells**—a living grimoire of PowerShell incantations carefully gathered 
 and scribed to automate the mundane, banish the bugs, and conjure order out of chaos. 
 
 ---
@@ -22,8 +22,11 @@ They cleanly and permanently rid your system of unwanted bloatware—whether you
 ### ⛰️ Setting-Spells (Transmutation)
 Reshape your environment to your will. These scripts alter system configurations, tweak Windows settings, and transmute the very fabric of your OS to suit your administrative needs.
 
-### 🛠️ Practical-Spells (Utility Magic)
+### 🛠️ Practical-Spells (Utility)
 These are the versatile, everyday enchantments meant to save you time on routine administrative tasks, file management, and system maintenance. 
+
+### ✨ Update-Spells (Enhancement)
+Reinforce the runes - These will help ward off obsolescence and keep the inner amalgamations of your machine running smoothly.
 
 ---
 
@@ -38,10 +41,10 @@ Amongst the categorized tomes, you may find a few loose spells. The scribe is st
     ```powershell
     git clone [https://github.com/Pat-Brennan/shell-spells.git](https://github.com/Pat-Brennan/shell-spells.git)
     ```
-2.  **Unseal your Execution Policy** (if the realm's wards block your magic):
+2.  **Unseal your Execution Policy** (if the realm's wards block your administrative power):
     ```powershell
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
-3.  **Invoke the Magic:** Navigate to the desired tome and cast the spell by calling the `.ps1` script or importing the `.psm1` module.
+3.  **Invoke the Incantation:** Navigate to the desired tome and cast the spell by calling the `.ps1` script or importing the `.psm1` module.
 
 > **⚠️ Archmage's Warning:** *Never cast a spell you do not understand. Always read the runes inside the `.ps1` files before invoking them in a production realm!*
