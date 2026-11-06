@@ -48,3 +48,17 @@ Amongst the categorized tomes, you may find a few loose spells. The scribe is st
 3.  **Invoke the Incantation:** Navigate to the desired tome and cast the spell by calling the `.ps1` script or importing the `.psm1` module.
 
 > **⚠️ Archmage's Warning:** *Never cast a spell you do not understand. Always read the runes inside the `.ps1` files before invoking them in a production realm!*
+
+---
+
+## 🪄 Sample Spells
+
+### Network Monitor - Runs a continuous ping on all endpoints, returning with their current status. Re-casts the ping every 10 seconds.
+
+<img width="1055" height="634" alt="image" src="https://github.com/user-attachments/assets/8fa9b071-7e0f-40a2-b6a0-d6f30e16b7c0" />
+
+### Hidden Service Check - Scans your registry for services that may not typically appear in services.msc
+
+<img width="1591" height="844" alt="image" src="https://github.com/user-attachments/assets/b12ccd45-c380-4b86-a86c-4309c3195912" />
+
+
